@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THfeet-meter</title>
+</head>
+<body>
+<p>Nhập vào đây số mét</p>
+<input id="met" oninput="convert1(this.value)">
+<p>Nhập vào đây số feet </p>
+<input id="feet" oninput="convert2(this.value)">
+<scan id="output1"></scan>
+<script>
+    function convert1(value) {
+        let calcu1= 3.279*parseFloat(value);
+        document.getElementById("output1").innerHTML= calcu1;
+    }
+    function convert2(value1) {
+        let calcu2= 0.305*parseFloat(value1);
+        document.getElementById("output1").innerHTML= calcu2;
+    }
+</script>
+</body>
+</html>
